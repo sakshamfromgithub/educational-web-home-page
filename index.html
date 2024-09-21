@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,37 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="modern logo .png" type="image/x-icon">
-    <!-- linking google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap" rel="stylesheet">
 
-    <title>SAKSHAM STUDY POINT</title>
+    <!-- linking google font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- linking bootstrap style cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>Mobile Web</title>
 </head>
 
 <body>
     <header>
         <div class="container nav">
             <img src="modern logo .png" alt="logo">
-           
-            <div class="navlinks1">
+
+            <!-- Navigation links (hidden on small screens) -->
+            <div class="navlinks1 keyhide">
                 <p class="nv-opt">HOME</p>
                 <p class="nv-opt op">COURSES</p>
                 <p class="nv-opt op">ABOUT-US</p>
             </div>
-           
-            <div class="navlinks2">
+
+            <div class="navlinks2 keyhide">
                 <a class="btn log" href="./login.html">LOGIN</a>
                 <a class="sign btn" href="./signup.html">SIGNUP</a>
+            </div>
+        </div>
+
+        <!-- Bootstrap Offcanvas for small screens -->
+        <div class="hd offcanvas-for-hide">
+            <button class="btn btn-danger" style="background-color: maroon; border: none;" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><span
+                    class="material-symbols-outlined">menu</span></button>
+        </div>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" style="height: 50vh;"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <p class="nv-opt">HOME</p>
+                    <p class="nv-opt op">COURSES</p>
+                    <p class="nv-opt op">ABOUT-US</p>
+                    <a href="/my web project/login.html">LOGIN</a>
+                    <a href="/my web project/signup.html">SIGNUP</a>
+                </ul>
             </div>
         </div>
     </header>
 
     <div class="main-content">
-        <h1>Learn <br> and Crack the <h1 class="maroon">JEECUP (POLYTECHNIC) <br> JEE MAINS  AND <br>JEE ADVANCED (IIT)</h1></h1>
-        <img src="modern logo .png" alt="">
-            </div>
+        <div>
+            <h1 class="firsth1">Learn <br> and Crack the
+                <h1 class="maroon">JEECUP (POLYTECHNIC) <br> JEE MAINS AND <br>JEE ADVANCED (IIT)</h1>
+            </h1>
+            <img src="modern logo .png" alt="">
+
+        </div>
+    </div>
+
+
+    <!-- linking bootstrap script cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 
